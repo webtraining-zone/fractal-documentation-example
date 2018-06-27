@@ -1,0 +1,1 @@
+Estas son algunas notas sobre los botones.
