@@ -1,0 +1,9 @@
+.Header {
+    color: white;
+    font-weight: bold;
+    background: #bb3c00;
+}
+
+.Header-navToggle svg {
+    fill: white;
+}

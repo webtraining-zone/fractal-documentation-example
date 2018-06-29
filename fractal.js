@@ -14,7 +14,7 @@ fractal.components.set('path', __dirname + '/src/components');
 fractal.docs.set('path', __dirname + '/src/docs');
 
 /* Specify a directory of static assets */
-fractal.web.set('static.path', __dirname + '/public');
+fractal.web.set('static.path', __dirname + '/src/static');
 
 /* Set the static HTML build destination */
 fractal.web.set('builder.dest', __dirname + '/dist');
@@ -27,9 +27,12 @@ const customTheme = mandelbrot({
   skin: 'orange',
   styles: [
     'default',
-    // '/public/css/global-styles.css',
+    '/css/theme-styles.css',
   ],
   // any other theme configuration values here
 });
+
+// specify a directory to hold the theme override templates
+customTheme.addLoadPath(__dirname + '/src/theme-overrides');
 
 fractal.web.theme(customTheme); // tell Fractal to use the configured theme by default
