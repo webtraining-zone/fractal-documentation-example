@@ -26,6 +26,7 @@ fractal.web.set('builder.dest', __dirname + '/dist');
 const customTheme = mandelbrot({
   skin: 'orange',
   styles: [
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css',
     'default',
     '/css/theme-styles.css',
   ],
