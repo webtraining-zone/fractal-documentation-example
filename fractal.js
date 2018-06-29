@@ -2,6 +2,7 @@
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
+const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
 
 /* Set the title of the project */
 fractal.set('project.title', 'UI Components');
@@ -17,3 +18,18 @@ fractal.web.set('static.path', __dirname + '/public');
 
 /* Set the static HTML build destination */
 fractal.web.set('builder.dest', __dirname + '/dist');
+
+//
+// Theme Config
+// create a new instance with custom config options
+//
+const customTheme = mandelbrot({
+  skin: 'orange',
+  styles: [
+    'default',
+    // '/public/css/global-styles.css',
+  ],
+  // any other theme configuration values here
+});
+
+fractal.web.theme(customTheme); // tell Fractal to use the configured theme by default
