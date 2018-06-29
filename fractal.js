@@ -22,6 +22,7 @@ fractal.web.set('builder.dest', __dirname + '/dist');
 //
 // Theme Config
 // create a new instance with custom config options
+// https://fractal.build/guide/web/default-theme
 //
 const customTheme = mandelbrot({
   skin: 'navy',
@@ -30,6 +31,7 @@ const customTheme = mandelbrot({
     'default',
     '/css/theme-styles.css',
   ],
+  nav: ['docs', 'components'], // show docs above components in the sidebar
   // any other theme configuration values here
 });
 

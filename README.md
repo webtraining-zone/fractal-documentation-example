@@ -33,3 +33,8 @@ npm install
 ```
 fractal start --sync
 ```
+
+## Build para producción
+```
+fractal build
+```
