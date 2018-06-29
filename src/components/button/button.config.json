@@ -1,0 +1,9 @@
+{
+  "title": "Button",
+  "status": "prototype",
+  "context": {
+    "button_text_default": "Default Button Example",
+    "button_text_success": "Success Button Example",
+    "button_text_info": "Info Button Example"
+  }
+}
