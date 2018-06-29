@@ -3,5 +3,7 @@
         {% include 'icons/close-nav.svg' %}
         {% include 'icons/open-nav.svg' %}
     </button>
-    <a href="{{ path('/') }}" class="Header-title" data-pjax>{{ frctl.get('project.title') | default('Component Library') }}</a>
+    <a href="{{ path('/') }}" class="Header-title" data-pjax>
+        {{ frctl.get('project.title') | default('Component Library') }} by <img src="/img/logo-webtraining.png" alt="" width="120">
+    </a>
 </div>

@@ -5,7 +5,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
 
 /* Set the title of the project */
-fractal.set('project.title', 'UI Components');
+fractal.set('project.title', 'Custom Components');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
@@ -24,7 +24,7 @@ fractal.web.set('builder.dest', __dirname + '/dist');
 // create a new instance with custom config options
 //
 const customTheme = mandelbrot({
-  skin: 'orange',
+  skin: 'navy',
   styles: [
     'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css',
     'default',
